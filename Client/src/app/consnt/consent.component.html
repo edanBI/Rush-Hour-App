@@ -1,0 +1,32 @@
+<div id="idan" *ngIf="!_c.displayGame"></div>
+<div class="background">
+  <div class="content">
+    <h1>Consent</h1>
+    <h2>Please consider this information carefully before deciding whether to accept this task.</h2>
+    <h2>TITLE OF RESEARCH:</h2> <p>Intelligent Group Decision Making.</p>
+    <h2>PURPOSE OF RESEARCH:</h2> <p>To examine problem solving performance.</p>
+    <h2>WHAT YOU WILL DO:</h2> <p>You will be asked to solve a Sokoban game problem.</p>
+    <h2>TIME REQUIRED:</h2> <p>Participation will take approximately 40-50 minutes.</p>
+    <h2>RISKS:</h2> <p>There are no anticipated risks associated with participating in this study.
+    <br/>The effects of participating should be comparable to those you would experience from viewing a computer monitor for 40 minutes and using a mouse.</p>
+    <h2>COMPENSATION:</h2> <p>Upon completion of this task, you will receive a code to enter on the Amazon Mechanical Turk task page,<br/> and you will receive the amount that was indicated on the task page.</p>
+    <h2>CONFIDENTIALITY:</h2> <p>Your participation in this study will remain confidential. Your responses will be assigned a code number.<br/>
+    You will NOT be asked to provide your name. You will be asked to provide your age and gender.<br/>
+    Throughout the experiment, we may collect data such as browser type, operating system version, mouse movements, and error rates.<br/>
+    The records of this study will be kept private.<br/>
+    We will delete your Amazon Mechnical Turk Worker ID once we process your task and payment (within 3 days of completing this task).<br/>
+    In any sort of report we make public we will not include any information that will make it possible to identify you without your explicit consent.<br/>
+    Research records will be kept in a locked file; only the researchers will have access to the records.</p>
+    <h2>PARTICIPATION AND WITHDRAWAL:</h2> <p>Your participation in this study is voluntarily, and you may withdraw and return the task to Amazon Mechanical Turk at any time.
+    <br/>You will receive a compensation only if you complete the task. You may withdraw at any time by closing the web page of the task.</p>
+    <h2>CONTACT:</h2> <p>This study is conducted by researchers at the Ben-Gurion University<br>
+    If you have any questions or concerns about this study, please contact hillash@post.bgu.ac.il.</p>
+
+    <h2>CONSENT:</h2> <p>I have read the above information and the nature and purpose of this research have been sufficiently explained. I consent to take part in the study.</p>
+
+    <p><input type="checkbox" [(ngModel)]="isAgreed" />I agree and will participate in this study.</p>
+    <br/>
+    <button [disabled]="!isAgreed" routerLink="/demographicQuestionnaire">Continue</button>
+    <br/><br/>
+  </div>
+</div>

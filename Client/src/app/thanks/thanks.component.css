@@ -1,0 +1,26 @@
+h1{font-size:36px}h2{font-size:18px}.w3-serif{font-family:serif}
+h1,h2,p{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
+h1{text-align: center}
+h2{line-height: initial;}
+.content{
+  position: fixed;
+  height: 100%;
+  left:15%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 30%;
+  width: 60%;
+  background: azure;
+}
+.background{
+  background: cadetblue;
+}
+.colorRed{
+  color: red;
+}
+.height{
+  height: 100%;
+}
+#idan{
+  display: none;
+}

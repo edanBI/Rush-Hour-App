@@ -1,0 +1,33 @@
+<h1> Instance Questionnaire</h1>
+<form [formGroup]="myForm">
+  <hr>
+  <mat-form-field>
+    <mat-select placeholder="What ia the best car to move first?" formControlName="q1">
+      <mat-option value="red">red</mat-option>
+      <mat-option value="green">green</mat-option>
+      <mat-option value="yellow">yellow</mat-option>
+      <mat-option value="blue">blue</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <br/>
+  <mat-form-field>
+    <mat-select placeholder="What ia the minimum number of moves to win this game?" formControlName="q2">
+      <mat-option value="1-20">1-20</mat-option>
+      <mat-option value="21-40">21-40</mat-option>
+      <mat-option value="41-60">41-60</mat-option>
+      <mat-option value="61-80">61-80</mat-option>
+      <mat-option value="81-100">81-100</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <br/>
+  <mat-form-field>
+    <input matInput placeholder="How hard was this game? (1-10)" formControlName="q3" >
+    <span *ngIf="q3.errors?.min && q3.touched">
+      {{ q3.errors.min.actual }} is not in the range
+    </span>
+  </mat-form-field>
+  <br/>
+</form>
+<br/>
+<br/>
+<button [disabled]="!myForm.valid" routerLink="/thanks">Submit</button>

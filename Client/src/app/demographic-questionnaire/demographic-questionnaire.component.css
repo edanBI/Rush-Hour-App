@@ -1,0 +1,30 @@
+h1{font-size:36px}h2{font-size:18px}.w3-serif{font-family:serif}
+h1,h2,p{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
+h1{text-align: center}
+h2{line-height: initial;}
+input[type="text"],select[type="text"] {  width: 200px;
+}
+.content{
+  position: fixed;
+  height: 100%;
+  padding-bottom: 15%;
+  left:15%;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 60%;
+  background: azure;
+}
+.background{
+  position: fixed;
+  height: 100%;
+  background: cadetblue;
+}
+.height{
+  height: 100%;
+}
+#idan{
+  display: none;
+}
+mat-form-field{
+  width: 250px;
+}

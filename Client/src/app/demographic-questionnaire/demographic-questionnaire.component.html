@@ -1,0 +1,48 @@
+<div class="background">
+  <div class="content" >
+    <h1> Demographic Questionnaire</h1>
+    <form [formGroup]="myForm">
+      <hr>
+    <mat-form-field>
+      <input matInput placeholder="workerID" formControlName="workerID">
+    </mat-form-field>
+      <br/>
+      <mat-form-field>
+        <input matInput placeholder="age" formControlName="age">
+        <span *ngIf="age.errors?.min && age.touched">
+      {{ age.errors.min.actual }} is young to use this app kiddo!
+  </span>
+        <span *ngIf="age.errors?.max && age.touched">
+      {{ age.errors.max.actual }} is too you old to use this app gramps!
+  </span>
+      </mat-form-field>
+      <br/>
+      <mat-form-field>
+        <mat-select placeholder="gender" formControlName="gender">
+          <mat-option value="male">Male</mat-option>
+          <mat-option value="female">Female</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <br/>
+      <mat-form-field>
+        <mat-select placeholder="education" formControlName="education">
+          <mat-option value="Less than High School">Less than High School</mat-option>
+          <mat-option value="High School/GED">High School/GED</mat-option>
+          <mat-option value="College">College</mat-option>
+          <mat-option value="Graduate Degree">Graduate Degree</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <br/>
+      <mat-form-field>
+        <input matInput placeholder="country" formControlName="country">
+        <span *ngIf="country.invalid && country.touched">
+      That country sucks...
+  </span>
+      </mat-form-field>
+    </form>
+    <br/>
+    <br/>
+    <button [disabled]="!myForm.valid" routerLink="/instruction">Submit</button>
+  </div>
+</div>
+<div id="idan" *ngIf="!_c.displayGame"></div>

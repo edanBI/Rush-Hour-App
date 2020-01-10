@@ -1,0 +1,36 @@
+<div class="background">
+  <div class="content">
+    <h1>Instructions - Rush-hour</h1>
+    <h4>In this task you will play a version of the game Rush-hour.</h4>
+    <p>Rush Hour is a sliding block puzzle invented by Nob Yoshigahara in the 1970s.</p>
+    <p>
+      The goal of the game is to get only the red car out through the exit of the board by moving the other vehicles out of its way.<br/>
+      However, the cars and trucks obstruct the path which makes the puzzle harder.<br/>
+    </p>
+    <p>
+      The board is a 6x6 grid, The game comes with 16 vehicles (12 cars, 4 trucks), each colored differently.<br/>
+      Cars and trucks are both one square wide, but cars are two squares long and trucks are three squares long. <br/>
+      Vehicles can only be moved along a straight line on the grid; rotation is forbidden. v
+    </p>
+    <p>
+      There are 3 levels to the game, etch level contains questions on the level, You can't preside the game until all the questions bean anserd.<br/>
+      You will have 10 minutes to solve etch level.<br/>
+      You may use the UNDO feature to undo your immediately preceding move,<br/>
+      The RESET the feature will restore the car and track to their first positions, at the start of the level.<br/>
+    </p>
+    <p> You will have the opportunity to get a bonus based on your performance - if all of your solutions will be in the right range of corectness, you get a bonus of 2.5$.</p>
+    <br>
+
+    <h1>Learn the game</h1>
+    <h3>Target car (red)-</h3><img src="assets/redCar.png">
+    <h3>Parking lott-</h3><img src="assets/field.jpg">
+    <h3>Interference cars\tracks (all color but red)-</h3><img src="assets/car.png"> <img src="assets/truck.png">
+
+    <h2>Small puzzle before the test-</h2>
+    <div id="idan" *ngIf="!_c.displayGame"></div>
+<br/>
+<br/>
+<br/>
+    <button routerLink="/game">Continue</button>
+  </div>
+</div>
